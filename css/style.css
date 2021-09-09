@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-decoration: none;
+}
+
+body {
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+    --FontSize:15px;
+
+    font-size: var(--FontSize);
+    font-family: 'Poppins', sans-serif;
+ 
+}
+.center-text {
+    text-align: center;
+}
+
+header{
+    margin-top: 70px;
+    overflow: hidden;
+}
+header h1{
+    color: var(--Very-Dark-Blue) ;
+}
+header h1:first-child{
+    font-weight: 300;
+    font-size: 30px;
+}
+
+header h2{
+    font-size: 30px;
+    color: var(--Very-Dark-Blue) ;
+
+}
+header p{
+    color: var(--Grayish-Blue);
+    width: 500px;
+    margin: 15px auto;
+}
+main{
+    background: var(--White);
+    overflow: hidden;
+    margin: 37px 9%;
+
+}
+
+
+.cards{
+    display: block;
+    
+}
+.cards .card{
+    border-radius: 8px;
+    overflow: hidden;
+    color: #000;
+    height: 250px;
+    padding: 26px 27px 12px;
+    border: 1px solid rgb(232 232 232 / 50%);
+    border-top: 5px solid var(--Cyan);
+    margin-bottom: 20px;
+    box-shadow: 2px 17px 38px -19px hsl(180deg 62% 55% / 50%);
+}
+.cards .card.card1{
+    margin-left: 13px;
+}
+.cards .card.card2{
+    border-top: 5px solid var(--Red);
+}
+.cards .card.card3{
+    border-top: 5px solid var(--Orange);
+
+}
+.cards .card.card4{
+    margin-right: 13px;
+    border-top: 5px solid var(--Blue);
+
+}
+.cards .card .card-flex{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    
+}
+
+
+.cards .card .info-card  h3{
+    font-size: 16;
+    color: var(--Very-Dark-Blue) ;
+}
+.cards .card .info-card  p{
+    font-size: 13px;
+    margin-top: 7px;
+    margin-bottom: calc(15%);
+    color: var(--Grayish-Blue);
+}
+.cards .card p{
+    margin-top: 24px;
+    font-size: var(--FontSize);
+    color: #e8e8e8;
+}
+.cards .card .card-flex .info-card img{
+    width: 60px;
+}
+.cards{
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(calc(93%/3), 1fr));
+    grid-gap: calc(8%/3);
+    justify-items: center;
+}

@@ -1,0 +1,50 @@
+@media (max-width: 666px) {
+    header{
+        padding: 0 26px;
+    }
+    header p{
+        width: auto;
+    }
+    main{
+        overflow: auto;
+        margin: auto;
+    }
+    .cards {
+        margin: 72px 20px;
+        display: block;
+    }
+    .cards  .card{
+        margin-bottom: 20px;
+    }
+    .cards .card.card1
+     {
+        margin-left: 0;
+    }
+    .cards .card.card4{
+        margin-right: 13px;
+
+    }
+    .cards .card .card-flex {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .cards .card .card-flex .info-card:last-child{
+        align-self: flex-end;
+    }
+}
+
+@media (min-width: 1100px){
+    
+    .cards{
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(auto-fill, minmax(calc(93%/3), 1fr));
+        grid-gap: calc(8%/3);
+        justify-items: center;
+    }
+    main{
+        overflow: hidden;
+    }
+   
+}
